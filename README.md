@@ -5,6 +5,20 @@ Adapted for: DEN
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
+<!--9:00 5 minutes -->
+
+<!-- So who remembers Git?
+
+What is the difference between Git and Github?
+
+So what we know about Git and GitHub is great if we have only one developer.  But what happens if we bring ten, twenty, thirty developers, working on five different projects onto our team?  What problems might we see?
+
+Some of those problems can be alleviated with branching.
+
+Who has published websites online?
+
+Today we will show an incredibly easy way to get a front-end website online called GitHub pages.  This can save you countless hours of setting up servers, and interfacing with 3rd party tools. -->
+
 # Github Branches and Pages
 
 ## Why is this important?
@@ -17,18 +31,20 @@ Adapted for: DEN
 ## What are the objectives?
 *After this lesson, students will be able to:*
 
-- Fork, clone, and make pull requests to repositories
-- Create, merge and delete branches on local and remote repositories
-- Use git, GitHub and branches to collaborate with other developers
-- Deploy a project to Github Pages
+- **Fork, clone, and make pull** requests to repositories
+- **Create, merge and delete** branches on local and remote repositories
+- **Use** git, GitHub and branches to collaborate with other developers
+- **Deploy** a project to Github Pages
 
 ## Where should we be now?
 *Before this lesson, students should already be able to:*
 
-- Use the command line
-- Use a text editor
-- Explain basic git commands like init, add, commit, push, pull and clone
-- Fork and clone remote repositories
+- **Use** the command line
+- **Use** a text editor
+- **Explain** basic git commands like init, add, commit, push, pull and clone
+- **Fork and clone** remote repositories
+
+<!--9:05 15 minutes -->
 
 ## Git Branching
 
@@ -44,7 +60,7 @@ You create a branch anytime you want to work on a new feature, fix a bug, or ref
 
 ## Creating a Branch - Demo
 
-By default, as soon as you make your first commit, you have and are on a `master` branch, and that's where your most production-ready, least experimental code lives.
+By default, as soon as you make your first commit, you are on a `master` branch, and that's where your most production-ready, least experimental code lives.
 
 Any time you're tasked with building a new feature, you make a branch named something obvious, switch to it, write some code, and then eventually merge it into master. Hopefully after someone's double-checked your work.
 
@@ -65,7 +81,7 @@ $ git commit -m 'initializes repository with an empty readme'
 
 #### Suddenly, a new feature!
 
-Now, let's say we have a feature we're about to work on. Something simple for now - let's say we want someone to know what this project is all about if they find it on Github, so we should make a readme.
+Now, let's say we have a feature we're about to work on. Something simple for now - let's say we want someone to know what this project is all about if they find it on Github, so we should add some info to our readme.
 
 Writing a readme. **That's a new feature, so we should make a new branch.**
 
@@ -90,7 +106,7 @@ Switched to branch 'writing-our-readme'
 
 Nice. `git checkout` is a beautiful command – you can use it to check out an old piece of history, another branch, even a specific file or a folder from an old piece of history _on_ another branch.
 
-Now we're working in alternate universe. We can make whatever changes we need. Let's pretend we filled that sucker up with the best readme you've ever read. Obviously we should save our history with a commit, but we're still on our `writing-our-readme` branch, that hasn't changed.
+Now we're working in an alternate universe. We can make whatever changes we need. Let's pretend we filled that sucker up with the best readme you've ever read. Obviously we should save our history with a commit, but we're still on our `writing-our-readme` branch, that hasn't changed.
 
 ```
 $ git add -A
@@ -122,7 +138,7 @@ You can literally switch between those branches in your terminal, switch back to
 
 The very last step of this process is to _merge_ your changes from one branch back into your master. In a few weeks, when you work on your group projects, we'll show you how to use Github to merge changes in a more collaborative, central way.
 
-But before Github existed, when you're working on a solo project, or maybe just because you love Terminal, let's look at how to merge your own branches back into your production-ready `master`.
+But before we get to GitHub, or maybe just because we love Terminal, let's look at how to merge your own branches back into your production-ready `master`.
 
 We've gone through the whole process – you're starting a new feature, so you make a new branch, make a bunch of commits on that branch as you work on it, and now you're satisfied it's ready to ship.
 
@@ -151,7 +167,7 @@ $ git branch -d writing-our-readme
 Deleted branch writing-our-readme (was 62b3656).
 ```
 
-Don't worry – just like most things in git, it's not gone forever. You could always checkout the last piece of history before you deleted the branch, and your branch would be there. Consider that timehopping to the past, where in the present it's gone and you don't need it.
+Don't worry – just like most things in git, it's not gone forever. You could always checkout the last piece of history before you deleted the branch, and your branch would be there. Consider that timehopping to the past, but in the present it's gone and you don't need it.
 
 Your most recent code ready to ship is in `master`, and you're a flipping pro.
 
@@ -184,6 +200,8 @@ You can `push` and `pull` those branches easily to save your work up in the clou
 
 > "Real programmers don't edit `master`." – Dave, the Programmer
 
+<!--9:20 5 minutes -->
+
 ## Practice thinking in "branches" - Discussion
 
 Team up with the person next to you, and go through the following commands we've reviewed in class.  
@@ -193,6 +211,8 @@ Team up with the person next to you, and go through the following commands we've
 - git merge
 
 Based on what we've talked about, and before you jump into your terminal, discuss the correct commands you would have to use - and the correct order you would need to use them in - to repeat the process of creating a readme. Be aware of the "why" and that you may have to use some commands more than once.
+
+<!--9:25 10 minutes -->
 
 ## Branch, Push, Merge, Repeat - Independent Practice
 
@@ -207,11 +227,15 @@ Start by mimicking our example – create a branch to write another readme.
 - Write some code
 - `git merge` that branch back into your `master`
 
-Once you've got it down, do the same process again for a bug fix (aka a typo), so you get in the habit of creating branches whenever you need to make changes.
+Once you've got it down, switch roles, and do the same process again, so you get in the habit of creating branches whenever you need to make changes.
 
-## Create a pull request on GitHub - Codealong
+<!--9:35 10 minutes -->
+
+## Create a pull request on GitHub - Catchup
 
 Before you can open a pull request, you must create a branch in your local repository, commit to it, and push the branch to a repository or fork on GitHub.
+
+<!--Do this on the git-branching-and-pages repo on my personal fork -->
 
 1. Visit the repository you pushed to
 2. Click the "Compare, review, create a pull request" button in the repository ![pr](https://cloud.githubusercontent.com/assets/40461/8229344/d344aa8e-15ad-11e5-8578-08893bcee335.jpg)
@@ -222,7 +246,10 @@ Before you can open a pull request, you must create a branch in your local repos
 6. Click "Click to create a pull request" for this comparison
 7. Enter a title and description for your pull request
 8. Click 'Send pull request'
-9.
+
+<!--Have all students practice making a pull request for this repo -->
+
+<!--9:45 10 minutes -->
 
 ## GitHub pages - Demo
 
@@ -246,6 +273,8 @@ echo "<h1> GitHub pages! </h1>" >> index.html
 ```
 
 ...you'll be able to navigate to http://YOURUSERNAME.github.io/REPOSITORYNAME to view the rendered html. You can also point a new domain name to this URL; this would give you a fully deployed project with a custom URL.
+
+<!--9:55 5 minutes -->
 
 ## Conclusion
 
