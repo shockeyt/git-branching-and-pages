@@ -31,7 +31,7 @@ Today we will show an incredibly easy way to get a front-end website online call
 ## What are the objectives?
 *After this lesson, students will be able to:*
 
-- **Fork, clone, and make pull** requests to repositories
+- **Fork, clone, and make** pull requests to repositories
 - **Create, merge and delete** branches on local and remote repositories
 - **Use** git, GitHub and branches to collaborate with other developers
 - **Deploy** a project to Github Pages
@@ -218,7 +218,7 @@ Based on what we've talked about, and before you jump into your terminal, discus
 
 Time for you to try it. With your partner, walk through the steps necessary together, catching each other if either makes any missteps.
 
-Start by mimicking our example – create a branch to write another readme.
+Start by mimicking our example in one partner's Terminal – create a branch to write another file.
 
 - `git init`
 - `git add` & `git commit`
@@ -236,6 +236,8 @@ Once you've got it down, switch roles, and do the same process again, so you get
 Before you can open a pull request, you must create a branch in your local repository, commit to it, and push the branch to a repository or fork on GitHub.
 
 <!--Do this on the git-branching-and-pages repo on my personal fork -->
+
+For this example, you will fork and clone the current repo.  Then you will...
 
 1. Visit the repository you pushed to
 2. Click the "Compare, review, create a pull request" button in the repository ![pr](https://cloud.githubusercontent.com/assets/40461/8229344/d344aa8e-15ad-11e5-8578-08893bcee335.jpg)
@@ -259,20 +261,25 @@ We strongly encourage checking out the official [docs](https://pages.github.com/
 
 It's _super_ easy and - basically - all that needs to happen is the creation of a new branch called `gh-pages`.  
 
-From our readme project:
-
-```bash
-git branch gh-pages
-git checkout gh-pages
-```
-
-As long as there is an index.html in your root directory of your gh-pages branch...
+As long as there is an index.html in your root directory...
 
 ```bash
 echo "<h1> GitHub pages! </h1>" >> index.html
 ```
 
+...and we move that code to a `gh-pages` branch...
+
+```bash
+git branch gh-pages
+git checkout gh-pages
+git push origin gh-pages
+```
+
 ...you'll be able to navigate to http://YOURUSERNAME.github.io/REPOSITORYNAME to view the rendered html. You can also point a new domain name to this URL; this would give you a fully deployed project with a custom URL.
+
+<!--Have all students make sure they are in the root of a git repository with `ls -al` and `git remote -v` 
+
+Also encourage them to read any error messages, google them, and ask if still stuck -->
 
 <!--9:55 5 minutes -->
 
