@@ -47,6 +47,7 @@ Today we will show an incredibly easy way to get a front-end website online call
 - **Fork and clone** remote repositories
 
 <!--9:05 15 minutes -->
+<!--It is vitally important that you parking lot all questions in this section--most questions will be answered by activities by end of class-->
 
 ## Git Branching
 
@@ -231,27 +232,31 @@ Start by mimicking our example in one partner's Terminal – create a branch to 
 
 Once you've got it down, switch roles, and do the same process again, so you get in the habit of creating branches whenever you need to make changes.
 
+<!--While devs work on independent practice, get most of the next activity (pull request from instructor's fork) ready -->
+
 <!--9:35 10 minutes -->
 
 ## Create a pull request on GitHub - Catchup
 
 Before you can open a pull request, you must create a branch in your local repository, commit to it, and push the branch to a repository or fork on GitHub.
 
-<!--Do this on the git-branching-and-pages repo on my personal fork -->
+<!--Do this on the git-branching-and-pages repo on my personal fork, then turn over to devs -->
 
-For this example, you will fork and clone the current repo.  Then you will...
+Follow the instructions below to create a pull request:
 
+1. Fork and clone the current repo **into your work folder**
+1. Create a new branch using the method we just covered
+1. Make a small change to one of the files
+1. Push your branch up to your GitHub fork
 1. Visit the repository you pushed to
-2. Click the "Compare, review, create a pull request" button in the repository ![pr](https://cloud.githubusercontent.com/assets/40461/8229344/d344aa8e-15ad-11e5-8578-08893bcee335.jpg)
-
-3. You'll land right onto the compare page - you can click Edit at the top to pick a new branch to merge in, using the Head Branch dropdown.
-4. Select the target branch your branch should be merged to, using the Base Branch dropdown
+2. Click the `New pull request` button in the repository
+3. You'll land right onto the compare page - use the Head Branch dropdown to select the branch with your changes
+4. Use the Base Branch dropdown to select the target branch your branch should be merged to (big hint: it's `master`)
+  - A good mnemonic for this is "From Head to Base" ~ "From Head to Toe"
 5. Review your proposed change
-6. Click "Click to create a pull request" for this comparison
+6. Click `Click to create a pull request` for this comparison
 7. Enter a title and description for your pull request
-8. Click 'Send pull request'
-
-<!--Have all students practice making a pull request for this repo -->
+8. Click `Send pull request`
 
 <!--9:45 10 minutes -->
 
@@ -262,6 +267,8 @@ Now that you have had some good practice at branching and merging it's time to d
 We strongly encourage checking out the official [docs](https://pages.github.com/) and practice more at home.
 
 It's _super_ easy and - basically - all that needs to happen is the creation of a new branch called `gh-pages`.  
+
+Navigate back to your `branching-is-awesome` directory, and go through the steps below.
 
 As long as there is an index.html in your root directory...
 
@@ -279,9 +286,7 @@ git push origin gh-pages
 
 ...you'll be able to navigate to http://YOURUSERNAME.github.io/REPOSITORYNAME to view the rendered html. You can also point a new domain name to this URL; this would give you a fully deployed project with a custom URL.
 
-<!--Have all students make sure they are in the root of a git repository with `ls -al` and `git remote -v` 
-
-Also encourage them to read any error messages, google them, and ask if still stuck -->
+<!--Encourage devs to read any error messages, google them, and ask if still stuck -->
 
 <!--9:55 5 minutes -->
 
