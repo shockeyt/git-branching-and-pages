@@ -15,7 +15,7 @@ What is the difference between Git and GitHub?
 
 So what we know about Git and GitHub is great if we have only one developer.  But what happens if we bring ten, twenty, thirty developers, working on five different projects onto our team?  What problems might we see?
 
-Some of those problems can be alleviated with branching.
+All of those problems can be alleviated with branching.
 
 Who has published websites online?
 
