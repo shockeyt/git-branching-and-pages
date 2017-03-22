@@ -276,6 +276,8 @@ As long as there is an index.html in your root directory...
 echo "<h1> GitHub pages! </h1>" >> index.html
 ```
 
+<!-- THIS IS NO LONGER THE WAY GH-PAGES WORKS BOOO, MAY NEED TO REWRITE -->
+
 ...and we move that code to a `gh-pages` branch...
 
 ```bash
